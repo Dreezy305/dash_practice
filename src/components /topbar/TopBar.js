@@ -23,7 +23,7 @@ function TopBar() {
             <Settings />
           </div>
           <img src={Avatar} alt="profile_picture" className="topAvatar" />
-        </div>
+        </div> 
       </div>
     </div>
   );
