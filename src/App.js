@@ -1,7 +1,9 @@
+import TopBar from "./components /topbar/TopBar";
+
 function App() {
   return (
     <div className="">
-      <h1>React Admin Dashboard</h1>
+      <TopBar />
     </div>
   );
 }
