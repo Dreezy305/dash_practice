@@ -17,5 +17,15 @@
 
 .sidebarTitle {
   font-size: 13px;
-  color: rgba(197, 194, 194);
+  color: rgba(187, 186, 186);
+}
+
+.sidebarList {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.sidebarListItem {
+  padding: 5px;
+  cursor: pointer;
 }
