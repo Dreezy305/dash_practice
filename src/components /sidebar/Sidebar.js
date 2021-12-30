@@ -9,14 +9,14 @@ function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <LineStyle /> Home
+            <li className="sidebarListItem active">
+              <LineStyle className="sidebarIcon" /> Home
             </li>
             <li className="sidebarListItem">
-              <Timeline /> Analytics
+              <Timeline className="sidebarIcon" /> Analytics
             </li>
             <li className="sidebarListItem">
-              <TrendingUp /> Sales
+              <TrendingUp className="sidebarIcon" /> Sales
             </li>
           </ul>
         </div>
@@ -25,13 +25,13 @@ function Sidebar() {
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <LineStyle /> Home
+              <LineStyle className="sidebarIcon" /> Home
             </li>
             <li className="sidebarListItem">
-              <Timeline /> Analytics
+              <Timeline className="sidebarIcon" /> Analytics
             </li>
             <li className="sidebarListItem">
-              <TrendingUp /> Sales
+              <TrendingUp className="sidebarIcon" /> Sales
             </li>
           </ul>
         </div>
