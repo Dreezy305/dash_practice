@@ -1,6 +1,19 @@
 import "./sidebar.css";
 import React from "react";
-import { LineStyle, Timeline, TrendingUp } from "@material-ui/icons";
+import {
+  LineStyle,
+  Timeline,
+  TrendingUp,
+  PermIdentity,
+  Payment,
+  AttachMoney,
+  BarChart,
+  MailOutline,
+  DynamicFeed,
+  ChatBubbleOutline,
+  WorkOutline,
+  Error,
+} from "@material-ui/icons";
 
 function Sidebar() {
   return (
@@ -25,13 +38,16 @@ function Sidebar() {
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <LineStyle className="sidebarIcon" /> Home
+              <PermIdentity className="sidebarIcon" /> Users
             </li>
             <li className="sidebarListItem">
-              <Timeline className="sidebarIcon" /> Analytics
+              <Payment className="sidebarIcon" /> Products
             </li>
             <li className="sidebarListItem">
-              <TrendingUp className="sidebarIcon" /> Sales
+              <AttachMoney className="sidebarIcon" /> Transactions
+            </li>
+            <li className="sidebarListItem">
+              <BarChart className="sidebarIcon" /> Reports
             </li>
           </ul>
         </div>
@@ -40,13 +56,13 @@ function Sidebar() {
           <h3 className="sidebarTitle">Notifications</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem active">
-              <LineStyle className="sidebarIcon" /> Home
+              <MailOutline className="sidebarIcon" /> Mail
             </li>
             <li className="sidebarListItem">
-              <Timeline className="sidebarIcon" /> Analytics
+              <DynamicFeed className="sidebarIcon" /> Feedback
             </li>
             <li className="sidebarListItem">
-              <TrendingUp className="sidebarIcon" /> Sales
+              <ChatBubbleOutline className="sidebarIcon" /> Messages
             </li>
           </ul>
         </div>
@@ -55,13 +71,13 @@ function Sidebar() {
           <h3 className="sidebarTitle">Staff</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem active">
-              <LineStyle className="sidebarIcon" /> Home
+              <WorkOutline className="sidebarIcon" /> Manage
             </li>
             <li className="sidebarListItem">
               <Timeline className="sidebarIcon" /> Analytics
             </li>
             <li className="sidebarListItem">
-              <TrendingUp className="sidebarIcon" /> Sales
+              <Error className="sidebarIcon" /> Reports
             </li>
           </ul>
         </div>
