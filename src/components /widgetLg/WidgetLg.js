@@ -18,5 +18,3 @@ function WidgetLg() {
 }
 
 export default WidgetLg;
-
-// 1:11:22
