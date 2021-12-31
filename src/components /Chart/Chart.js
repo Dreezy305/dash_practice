@@ -26,7 +26,7 @@ function Chart({ title = "", data = [], grid = bool, dataKey }) {
           }}
         >
           {grid && <CartesianGrid strokeDasharray="5 5" stroke="#e0dfdf" />}
-          <XAxis dataKey={dataKey} stroke="#5550bd" />
+          <XAxis dataKey="name" stroke="#5550bd" />
 
           <Tooltip />
           <Legend />

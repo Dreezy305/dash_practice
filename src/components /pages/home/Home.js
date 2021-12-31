@@ -8,7 +8,12 @@ function Home() {
   return (
     <div className="home">
       <FeaturedInfo />
-      <Chart data={userData} title="User Ananlytics" dataKey="Active User" />
+      <Chart
+        data={userData}
+        title="User Ananlytics"
+        dataKey="Active User"
+        grid={true}
+      />
     </div>
   );
 }
