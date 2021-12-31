@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./app.css";
 import TopBar from "./components /topbar/TopBar";
 import Sidebar from "./components /sidebar/Sidebar";
@@ -5,13 +6,15 @@ import Home from "./components /pages/home/Home";
 
 function App() {
   return (
-    <div className="">
+    <Router>
       <TopBar />
       <div className="container">
         <Sidebar />
-        <Home />
+        <Switch>
+          <Home />
+        </Switch>
       </div>
-    </div>
+    </Router>
   );
 }
 
