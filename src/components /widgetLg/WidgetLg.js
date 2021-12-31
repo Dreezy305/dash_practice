@@ -3,6 +3,9 @@ import "./widgetLg.css";
 import Avatar from "../../assets/avatar_two.svg";
 
 function WidgetLg() {
+  const Button = ({ type = "" }) => {
+    return <button className={"widgetLgButton " + type}>{type}</button>;
+  };
   return (
     <div className="widgetLg">
       <h3 className="widgetLgTitle">Latest Transactions</h3>
@@ -15,7 +18,49 @@ function WidgetLg() {
         </tr>
         <tr className="widgetLgTr">
           <td className="widgetLgUser">
-            <img src={Avatar} alt="avatar_widget" className="widgetSmgImg" />
+            <img src={Avatar} alt="avatar_widget" className="widgetLgImg" />
+            <span className="widgetLgName">Susan Carol</span>
+          </td>
+          <td className="widgetLgDate">2 Jun 2021</td>
+          <td className="widgetLgAmount">$122.00</td>
+          <td className="widgetLgStatus">
+            <Button type="Approved" />
+          </td>
+        </tr>
+
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <img src={Avatar} alt="avatar_widget" className="widgetLgImg" />
+            <span className="widgetLgName">Susan Carol</span>
+          </td>
+          <td className="widgetLgDate">2 Jun 2021</td>
+          <td className="widgetLgAmount">$122.00</td>
+          <td className="widgetLgStatus">
+            <Button type="Declined" />
+          </td>
+        </tr>
+
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <img src={Avatar} alt="avatar_widget" className="widgetLgImg" />
+            <span className="widgetLgName">Susan Carol</span>
+          </td>
+          <td className="widgetLgDate">2 Jun 2021</td>
+          <td className="widgetLgAmount">$122.00</td>
+          <td className="widgetLgStatus">
+            <Button type="Pending" />
+          </td>
+        </tr>
+
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <img src={Avatar} alt="avatar_widget" className="widgetLgImg" />
+            <span className="widgetLgName">Susan Carol</span>
+          </td>
+          <td className="widgetLgDate">2 Jun 2021</td>
+          <td className="widgetLgAmount">$122.00</td>
+          <td className="widgetLgStatus">
+            <Button type="Approved" />
           </td>
         </tr>
       </table>
