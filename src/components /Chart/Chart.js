@@ -4,14 +4,13 @@ import {
   LineChart,
   Line,
   XAxis,
-  YAxis,
   CartesianGrid,
   Tooltip,
   Legend,
   ResponsiveContainer,
 } from "recharts";
 
-function Chart() {
+function Chart({ title, data, grid }) {
   const data = [
     {
       name: "Jan",
