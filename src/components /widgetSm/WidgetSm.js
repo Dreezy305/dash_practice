@@ -1,10 +1,20 @@
 import React from "react";
 import "./widgetSm.css";
+import Avatar from "../../assets/avatar_two.svg";
 
 function WidgetSm() {
   return (
     <div className="widgetSm">
       <span className="widgetSmTitle">New Join Members</span>
+      <ul className="widgetSmList">
+        <li className="widgetSmListItem">
+          <img src={Avatar} alt="avatar_widget" className="widgetSmgIMg" />
+          <div className="widgetSmUser">
+            <span className="widgetSmUsername">Anna Keller</span>
+            <span className="widgetSmUserTitle">Software Engineer</span>
+          </div>
+        </li>
+      </ul>
     </div>
   );
 }
