@@ -9,62 +9,12 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { bool } from "prop-types";
 
-function Chart({ title, data, grid }) {
-  const data = [
-    {
-      name: "Jan",
-      "Active User": 4000,
-    },
-    {
-      name: "Feb",
-      "Active User": 3000,
-    },
-    {
-      name: "March",
-      "Active User": 2000,
-    },
-    {
-      name: "April",
-      "Active User": 2780,
-    },
-    {
-      name: "May",
-      "Active User": 1890,
-    },
-    {
-      name: "June",
-      "Active User": 2390,
-    },
-    {
-      name: "July",
-      "Active User": 3490,
-    },
-    {
-      name: "August",
-      "Active User": 3500,
-    },
-    {
-      name: "September",
-      "Active User": 4000,
-    },
-    {
-      name: "October",
-      "Active User": 4500,
-    },
-    {
-      name: "November",
-      "Active User": 5000,
-    },
-    {
-      name: "December",
-      "Active User": 5500,
-    },
-  ];
-
+function Chart({ title = "", data = [], grid = bool, dataKey }) {
   return (
     <div className="chart">
-      <h3 className="chartTitle">User Analytics</h3>
+      <h3 className="chartTitle">{title}</h3>
       <ResponsiveContainer width="100%" aspect={4 / 1}>
         <LineChart
           data={data}
@@ -75,8 +25,8 @@ function Chart({ title, data, grid }) {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="5 5" stroke="#e0dfdf" />
-          <XAxis dataKey="name" stroke="#5550bd" />
+          {grid && <CartesianGrid strokeDasharray="5 5" stroke="#e0dfdf" />}
+          <XAxis dataKey={dataKey} stroke="#5550bd" />
 
           <Tooltip />
           <Legend />
