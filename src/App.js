@@ -3,6 +3,7 @@ import "./app.css";
 import TopBar from "./components /topbar/TopBar";
 import Sidebar from "./components /sidebar/Sidebar";
 import Home from "./components /pages/home/Home";
+import UserList from "./components /pages/userList/UserList";
 
 function App() {
   return (
@@ -11,7 +12,12 @@ function App() {
       <div className="container">
         <Sidebar />
         <Switch>
-          <Home />
+          <Route path="/">
+            <Home />
+          </Route>
+          <Route path="/users">
+            <UserList />
+          </Route>
         </Switch>
       </div>
     </Router>
