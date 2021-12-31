@@ -12,6 +12,9 @@ function WidgetLg() {
           <th className="widgetLgTh">Amount</th>
           <th className="widgetLgTh">Status</th>
         </tr>
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser"></td>
+        </tr>
       </table>
     </div>
   );
