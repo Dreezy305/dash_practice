@@ -1,6 +1,7 @@
 import React from "react";
 import "./widgetSm.css";
 import Avatar from "../../assets/avatar_two.svg";
+import { Visibility } from "@material-ui/icons";
 
 function WidgetSm() {
   return (
@@ -13,6 +14,49 @@ function WidgetSm() {
             <span className="widgetSmUsername">Anna Keller</span>
             <span className="widgetSmUserTitle">Software Engineer</span>
           </div>
+          <button className="widgetSmButton">
+            <Visibility /> Display
+          </button>
+        </li>
+        <li className="widgetSmListItem">
+          <img src={Avatar} alt="avatar_widget" className="widgetSmgIMg" />
+          <div className="widgetSmUser">
+            <span className="widgetSmUsername">Anna Keller</span>
+            <span className="widgetSmUserTitle">Software Engineer</span>
+          </div>
+          <button className="widgetSmButton">
+            <Visibility /> Display
+          </button>
+        </li>
+        <li className="widgetSmListItem">
+          <img src={Avatar} alt="avatar_widget" className="widgetSmgIMg" />
+          <div className="widgetSmUser">
+            <span className="widgetSmUsername">Anna Keller</span>
+            <span className="widgetSmUserTitle">Software Engineer</span>
+          </div>
+          <button className="widgetSmButton">
+            <Visibility /> Display
+          </button>
+        </li>
+        <li className="widgetSmListItem">
+          <img src={Avatar} alt="avatar_widget" className="widgetSmgIMg" />
+          <div className="widgetSmUser">
+            <span className="widgetSmUsername">Anna Keller</span>
+            <span className="widgetSmUserTitle">Software Engineer</span>
+          </div>
+          <button className="widgetSmButton">
+            <Visibility /> Display
+          </button>
+        </li>
+        <li className="widgetSmListItem">
+          <img src={Avatar} alt="avatar_widget" className="widgetSmgIMg" />
+          <div className="widgetSmUser">
+            <span className="widgetSmUsername">Anna Keller</span>
+            <span className="widgetSmUserTitle">Software Engineer</span>
+          </div>
+          <button className="widgetSmButton">
+            <Visibility /> Display
+          </button>
         </li>
       </ul>
     </div>
