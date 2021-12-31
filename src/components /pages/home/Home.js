@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="home">
       <FeaturedInfo />
-      <Chart data={userData} title="User Ananlytics" dataKey={userData.A} />
+      <Chart data={userData} title="User Ananlytics" dataKey="Active User" />
     </div>
   );
 }

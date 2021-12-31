@@ -31,7 +31,7 @@ function Chart({ title = "", data = [], grid = bool, dataKey }) {
           <Tooltip />
           <Legend />
 
-          <Line type="monotone" dataKey="Active User" stroke="#82ca9d" />
+          <Line type="monotone" dataKey={dataKey} stroke="#82ca9d" />
         </LineChart>
       </ResponsiveContainer>
     </div>
