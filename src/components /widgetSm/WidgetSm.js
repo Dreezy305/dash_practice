@@ -4,7 +4,7 @@ import "./widgetSm.css";
 function WidgetSm() {
   return (
     <div className="widgetSm">
-      <span className="widgetSmTitle">New Members</span>
+      <span className="widgetSmTitle">New Join Members</span>
     </div>
   );
 }
