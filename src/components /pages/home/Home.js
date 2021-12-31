@@ -14,6 +14,7 @@ function Home() {
         dataKey="Active User"
         grid={true}
       />
+      <div className="homeWidgets"></div>
     </div>
   );
 }
