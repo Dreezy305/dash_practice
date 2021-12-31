@@ -1,5 +1,6 @@
 import React from "react";
 import "./widgetLg.css";
+import Avatar from "../../assets/avatar_two.svg";
 
 function WidgetLg() {
   return (
@@ -13,7 +14,9 @@ function WidgetLg() {
           <th className="widgetLgTh">Status</th>
         </tr>
         <tr className="widgetLgTr">
-          <td className="widgetLgUser"></td>
+          <td className="widgetLgUser">
+            <img src={Avatar} alt="avatar_widget" className="widgetSmgImg" />
+          </td>
         </tr>
       </table>
     </div>
