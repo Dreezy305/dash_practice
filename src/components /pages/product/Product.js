@@ -53,8 +53,17 @@ function Product() {
       </div>
       <div className="productBottom">
         <form className="productForm">
-          <div className="productFormLeft"></div>
-          <div className="productFormLeft"></div>
+          <div className="productFormLeft">
+            <label>Product Name</label>
+            <input type="text" placeholder="Apple Airpod" />
+            <label>In Stock</label>
+            <select name="inStock" id="inStock">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div className="productFormRight"></div>
         </form>
       </div>
     </div>
