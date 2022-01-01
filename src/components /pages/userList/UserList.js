@@ -46,7 +46,8 @@ function UserList() {
       renderCell: (params) => {
         return (
           <>
-            <button className="userListButton">Edit</button> <DeleteOutline />
+            <button className="userListEdit">Edit</button>{" "}
+            <DeleteOutline className="userListDelete" />
           </>
         );
       },
@@ -151,7 +152,7 @@ function UserList() {
       <DataGrid
         rows={rows}
         columns={columns}
-        pageSize={5}
+        pageSize={10}
         checkboxSelection
         disableSelectionOnClick
       />
