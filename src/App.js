@@ -8,6 +8,7 @@ import UserList from "./components /pages/userList/UserList";
 import User from "./components /pages/user/User";
 import NewUser from "./components /pages/NewUser/NewUser";
 import ProductList from "./components /pages/productList/ProductList";
+import Product from "./components /pages/product/Product";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
             <ProductList />
           </Route>
           <Route exact path="/product/:productId">
-            {/* <ProductList /> */}
+            <Product />
           </Route>
           <Route exact path="/newproduct">
             {/* <ProductList /> */}

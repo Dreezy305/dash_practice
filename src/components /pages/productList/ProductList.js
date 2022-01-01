@@ -22,7 +22,7 @@ function ProductList() {
       editable: true,
       renderCell: (params) => {
         return (
-          <div className="productListUser" style={{}}>
+          <div className="productListItem" style={{}}>
             <img
               src={params.row.img}
               className="productListImage"
