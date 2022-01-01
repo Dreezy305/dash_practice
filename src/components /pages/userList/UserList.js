@@ -1,6 +1,7 @@
 import React from "react";
 import "./userList.css";
 import { DataGrid } from "@material-ui/data-grid";
+import { DeleteOutline } from "@material-ui/icons";
 import Avatar from "../../../assets/avatar_two.svg";
 
 function UserList() {
@@ -14,12 +15,7 @@ function UserList() {
       renderCell: (params) => {
         return (
           <div className="userListUser" style={{}}>
-            <img
-              src={Avatar}
-              className=""
-              alt="user_avatar"
-              style={{ marginRight: "10px" }}
-            />{" "}
+            <img src={Avatar} className="userListImage" alt="user_avatar" />{" "}
             {params.row.username}
           </div>
         );
@@ -42,6 +38,18 @@ function UserList() {
       headerName: "Transactions",
       width: 160,
       editable: true,
+    },
+    {
+      field: "action",
+      headerName: "Action",
+      width: 150,
+      renderCell: (params) => {
+        return (
+          <>
+            <button className="userListButton">Edit</button> <DeleteOutline />
+          </>
+        );
+      },
     },
   ];
 
