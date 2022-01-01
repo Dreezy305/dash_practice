@@ -7,30 +7,41 @@ function UserList() {
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
-      field: "firstName",
-      headerName: "First name",
-      width: 150,
+      field: "user",
+      headerName: "User",
+      width: 200,
+      editable: true,
+      renderCell: (params) => {
+        return (
+          <div className="userListUser" style={{}}>
+            <img
+              src={Avatar}
+              className=""
+              alt="user_avatar"
+              style={{ marginRight: "10px" }}
+            />{" "}
+            {params.row.username}
+          </div>
+        );
+      },
+    },
+    {
+      field: "email",
+      headerName: "Email",
+      width: 200,
       editable: true,
     },
     {
-      field: "lastName",
-      headerName: "Last name",
-      width: 150,
+      field: "status",
+      headerName: "Status",
+      width: 120,
       editable: true,
     },
     {
-      field: "age",
-      headerName: "Age",
-      type: "number",
-      width: 110,
-      editable: true,
-    },
-    {
-      field: "fullName",
-      headerName: "Full name",
-      description: "This column has a value getter and is not sortable.",
-      sortable: false,
+      field: "transaction",
+      headerName: "Transactions",
       width: 160,
+      editable: true,
     },
   ];
 
