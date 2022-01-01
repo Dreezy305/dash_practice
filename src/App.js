@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./app.css";
 import TopBar from "./components /topbar/TopBar";
 import Sidebar from "./components /sidebar/Sidebar";
@@ -7,20 +8,22 @@ import UserList from "./components /pages/userList/UserList";
 
 function App() {
   return (
-    <Router>
-      <TopBar />
-      <div className="container">
-        <Sidebar />
-        <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
-          <Route path="/users">
-            <UserList />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <>
+      <Router>
+        <TopBar />
+        <div className="container">
+          <Sidebar />
+          <Routes>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/users">
+              <UserList />
+            </Route>
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
 }
 
