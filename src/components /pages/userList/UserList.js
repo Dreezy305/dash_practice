@@ -4,6 +4,7 @@ import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline } from "@material-ui/icons";
 import Avatar from "../../../assets/avatar_two.svg";
 import { userRows } from "../../../data";
+import { Link } from "react-router-dom";
 
 function UserList() {
   const columns = [
@@ -47,7 +48,9 @@ function UserList() {
       renderCell: (params) => {
         return (
           <>
-            <button className="userListEdit">Edit</button>{" "}
+            <Link to={"/user/" + params.id}>
+              <button className="userListEdit">Edit</button>
+            </Link>{" "}
             <DeleteOutline className="userListDelete" />
           </>
         );
