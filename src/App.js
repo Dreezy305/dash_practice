@@ -7,6 +7,7 @@ import Home from "./components /pages/home/Home";
 import UserList from "./components /pages/userList/UserList";
 import User from "./components /pages/user/User";
 import NewUser from "./components /pages/NewUser/NewUser";
+import ProductList from "./components /pages/productList/ProductList";
 
 function App() {
   return (
@@ -26,6 +27,15 @@ function App() {
           </Route>
           <Route exact path="/newUser">
             <NewUser />
+          </Route>
+          <Route exact path="/products">
+            <ProductList />
+          </Route>
+          <Route exact path="/product/:productId">
+            {/* <ProductList /> */}
+          </Route>
+          <Route exact path="/newproduct">
+            {/* <ProductList /> */}
           </Route>
         </Switch>
       </div>
