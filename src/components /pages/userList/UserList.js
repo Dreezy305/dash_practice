@@ -5,11 +5,15 @@ import { DeleteOutline } from "@material-ui/icons";
 import Avatar from "../../../assets/avatar_two.svg";
 import { userRows } from "../../../data";
 import { Link } from "react-router-dom";
+import { Alert, AlertTitle } from "@material-ui/lab";
 
 function UserList() {
   const [data, setData] = useState(userRows);
+  // const [alert, setAlert] = useState(false);
 
-  const handleDelete = (id) => {};
+  const handleDelete = (id) => {
+    setData(data.filter((item) => item.id !== id));
+  };
 
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
@@ -57,7 +61,10 @@ function UserList() {
             </Link>{" "}
             <DeleteOutline
               className="userListDelete"
-              onClick={() => handleDelete(params.row.id)}
+              onClick={() => {
+                handleDelete(params.row.id);
+                // setAlert(true);
+              }}
             />
           </>
         );
@@ -67,6 +74,12 @@ function UserList() {
 
   return (
     <div className="userList">
+      {/* {alert && (
+        <Alert severity="info">
+          <AlertTitle>Info</AlertTitle>
+          User Successfully deleted<strong>!</strong>
+        </Alert>
+      )} */}
       <DataGrid
         rows={data}
         columns={columns}
