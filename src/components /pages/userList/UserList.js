@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./userList.css";
 import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline } from "@material-ui/icons";
@@ -7,6 +7,8 @@ import { userRows } from "../../../data";
 import { Link } from "react-router-dom";
 
 function UserList() {
+  const [data, setData] = useState();
+
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
