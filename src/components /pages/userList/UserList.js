@@ -3,7 +3,7 @@ import "./userList.css";
 import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline } from "@material-ui/icons";
 import Avatar from "../../../assets/avatar_two.svg";
-import { rows } from "../../../data";
+import { userRows } from "../../../data";
 
 function UserList() {
   const columns = [
@@ -58,7 +58,7 @@ function UserList() {
   return (
     <div className="userList">
       <DataGrid
-        rows={rows}
+        rows={userRows}
         columns={columns}
         pageSize={10}
         checkboxSelection
