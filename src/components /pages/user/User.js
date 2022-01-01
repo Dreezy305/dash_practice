@@ -21,7 +21,8 @@ function User() {
           </div>
           <div className="userShowBottom">
             <span className="userShowTitle">Account Details</span>
-            <PermIdentity />
+            <PermIdentity className="userShowIcon" />
+            <span className="userShowInfoTitle">annabeck99</span>
           </div>
         </div>
         <div className="userUpdate"></div>
