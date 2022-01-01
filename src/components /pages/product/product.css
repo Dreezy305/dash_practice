@@ -65,3 +65,9 @@
 .productInfoValue {
   font-weight: 300;
 }
+
+.productBottom {
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
