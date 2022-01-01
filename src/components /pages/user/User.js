@@ -1,6 +1,7 @@
 import React from "react";
 import "./user.css";
 import Avatar from "../../../assets/avatar_two.svg";
+import { PermIdentity } from "@material-ui/icons";
 
 function User() {
   return (
@@ -13,9 +14,15 @@ function User() {
         <div className="userShow">
           <div className="userShowTop">
             <img src={Avatar} className="userShowImg" alt="avatar" />
-            <div className="userShowTopTitle"></div>
+            <div className="userShowTopTitle">
+              <span className="userShowUsername">Anna Becker</span>
+              <span className="userShowUserTitle">Software Engineer</span>
+            </div>
           </div>
-          <div className="userShowBottom"></div>
+          <div className="userShowBottom">
+            <span className="userShowTitle">Account Details</span>
+            <PermIdentity />
+          </div>
         </div>
         <div className="userUpdate"></div>
       </div>
