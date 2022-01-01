@@ -37,6 +37,8 @@ function User() {
               <span className="userShowInfoTitle">10.12.1999</span>
             </div>
 
+            <span className="userShowTitle">Contact Details</span>
+
             <div className="userShowInfo">
               <PhoneAndroid className="userShowIcon" />
               <span className="userShowInfoTitle">+2347012345678</span>
@@ -53,7 +55,13 @@ function User() {
             </div>
           </div>
         </div>
-        <div className="userUpdate"></div>
+        <div className="userUpdate">
+          <span className="userUpdateTitle">Edit</span>
+          <form className="userUpdateForm">
+            <div className="userUpdateLeft"></div>
+            <div className="userUpdateRight"></div>
+          </form>
+        </div>
       </div>
     </div>
   );
