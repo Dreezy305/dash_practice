@@ -1,5 +1,6 @@
 import React from "react";
 import "./user.css";
+import Avatar from "../../../assets/avatar_two.svg";
 
 function User() {
   return (
@@ -9,7 +10,13 @@ function User() {
         <button className="userAddButton">Create </button>
       </div>
       <div className="userContainer">
-        <div className="userShow"></div>
+        <div className="userShow">
+          <div className="userShowTop">
+            <img src={Avatar} className="userShowImg" alt="avatar" />
+            <div className="userShowTopTitle"></div>
+          </div>
+          <div className="userShowBottom"></div>
+        </div>
         <div className="userUpdate"></div>
       </div>
     </div>
