@@ -7,6 +7,7 @@ import {
   MailOutline,
   PermIdentity,
   PhoneAndroid,
+  Publish,
 } from "@material-ui/icons";
 
 function User() {
@@ -58,8 +59,62 @@ function User() {
         <div className="userUpdate">
           <span className="userUpdateTitle">Edit</span>
           <form className="userUpdateForm">
-            <div className="userUpdateLeft"></div>
-            <div className="userUpdateRight"></div>
+            <div className="userUpdateLeft">
+              <div className="userUpdateItem">
+                <label>Username</label>
+                <input
+                  type="text"
+                  placeholder="annabeck9"
+                  className="userUpdateInput"
+                />
+              </div>
+
+              <div className="userUpdateItem">
+                <label>Full Name</label>
+                <input
+                  type="text"
+                  placeholder="Anna Becker"
+                  className="userUpdateInput"
+                />
+              </div>
+
+              <div className="userUpdateItem">
+                <label>Email</label>
+                <input
+                  type="text"
+                  placeholder="anna@gmail.com"
+                  className="userUpdateInput"
+                />
+              </div>
+
+              <div className="userUpdateItem">
+                <label>Phone</label>
+                <input
+                  type="text"
+                  placeholder="+2347012345678"
+                  className="userUpdateInput"
+                />
+              </div>
+
+              <div className="userUpdateItem">
+                <label>Address</label>
+                <input
+                  type="text"
+                  placeholder="Lagos 9ja"
+                  className="userUpdateInput"
+                />
+              </div>
+            </div>
+            <div className="userUpdateRight">
+              <div className="userUpdateUpload">
+                <img className="userUpdateImg" src={Avatar} alt="avatar" />
+
+                <label htmlFor="file">
+                  <Publish />
+                </label>
+                <input type="file" id="file" style={{ display: "none" }} />
+              </div>
+            </div>
           </form>
         </div>
       </div>
