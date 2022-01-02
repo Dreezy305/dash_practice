@@ -2,7 +2,6 @@ import { Link } from "@material-ui/core";
 import React from "react";
 import Chart from "../../Chart/Chart";
 import { ProductData } from "../../../data";
-// import Avatar from "../../../assets/avatar_two.svg";
 import "./product.css";
 import { Publish } from "@material-ui/icons";
 
