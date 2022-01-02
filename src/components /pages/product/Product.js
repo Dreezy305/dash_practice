@@ -2,8 +2,9 @@ import { Link } from "@material-ui/core";
 import React from "react";
 import Chart from "../../Chart/Chart";
 import { ProductData } from "../../../data";
-import Avatar from "../../../assets/avatar_two.svg";
+// import Avatar from "../../../assets/avatar_two.svg";
 import "./product.css";
+import { Publish } from "@material-ui/icons";
 
 function Product() {
   return (
@@ -25,7 +26,11 @@ function Product() {
         </div>
         <div className="productTopRight">
           <div className="productInfoTop">
-            <img src={Avatar} className="productInfoImg" alt="product_image" />
+            <img
+              src="http://cdn4.iconfinder.com/data/icons/socialmediaicons_v120/48/google.png"
+              className="productInfoImg"
+              alt="product_image"
+            />
             <span className="productName">Apple Airpods</span>
           </div>
           <div className="productInfoBottom">
@@ -71,8 +76,17 @@ function Product() {
 
           <div className="productFormRight">
             <div className="productUpload">
-              <img src="" className="productUploadImg" alt="product_upload" />
+              <img
+                src="http://cdn4.iconfinder.com/data/icons/socialmediaicons_v120/48/google.png"
+                className="productUploadImg"
+                alt="product_upload"
+              />
+              <label for="file">
+                <Publish />
+              </label>
+              <input type="file" id="file" style={{ display: "none" }} />
             </div>
+            <button className="productButton">Update</button>
           </div>
         </form>
       </div>
