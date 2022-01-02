@@ -115,3 +115,18 @@
   flex-direction: column;
   justify-content: space-around;
 }
+
+.productUpload {
+  display: flex;
+  align-items: center;
+}
+
+.productButton {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
