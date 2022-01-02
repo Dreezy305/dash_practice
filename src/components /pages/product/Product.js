@@ -82,7 +82,7 @@ function Product() {
                 alt="product_upload"
               />
               <label for="file">
-                <Publish />
+                <Publish className="productUploadIcon" />
               </label>
               <input type="file" id="file" style={{ display: "none" }} />
             </div>
